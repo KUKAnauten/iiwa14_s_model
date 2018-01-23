@@ -30,12 +30,99 @@
   </material>
   <!--<xacro:include filename="$(find robotiq_s_model_visualization)/cfg/s-model_mesh.urdf"/>-->
   <!--<xacro:include filename="$(find robotiq_s_model_visualization)/cfg/s-model_articulated_macro.xacro" />-->
-  <!-- Fix to world just for testing -->
+  <material name="wood">
+    <color rgba="0.89 0.58 0.47 0.3"/>
+  </material>
+  <material name="aluminium">
+    <color rgba="0.7 0.7 0.7 0.4"/>
+  </material>
   <link name="world"/>
-  <!--joint between {parent} and link_0-->
-  <joint name="world_iiwa_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="0 0 0.0"/>
+  <joint name="world_table" type="fixed">
     <parent link="world"/>
+    <child link="table"/>
+  </joint>
+  <!-- Create table on which iiwa is standing -->
+  <link name="table">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.5"/>
+      <mass value="15"/>
+      <inertia ixx="0.05" ixy="0" ixz="0" iyy="0.06" iyz="0" izz="0.03"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0.70"/>
+      <geometry>
+        <box size="1.5 1.5 0.04"/>
+      </geometry>
+      <material name="wood"/>
+    </visual>
+    <visual>
+      <origin rpy="0 0 0" xyz="0.66 0.66 0.34"/>
+      <geometry>
+        <box size="0.08 0.08 0.68"/>
+      </geometry>
+      <material name="aluminium"/>
+    </visual>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.66 0.66 0.34"/>
+      <geometry>
+        <box size="0.08 0.08 0.68"/>
+      </geometry>
+      <material name="aluminium"/>
+    </visual>
+    <visual>
+      <origin rpy="0 0 0" xyz="0.66 -0.66 0.34"/>
+      <geometry>
+        <box size="0.08 0.08 0.68"/>
+      </geometry>
+      <material name="aluminium"/>
+    </visual>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.66 -0.66 0.34"/>
+      <geometry>
+        <box size="0.08 0.08 0.68"/>
+      </geometry>
+      <material name="aluminium"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0.70"/>
+      <geometry>
+        <box size="1.5 1.5 0.04"/>
+      </geometry>
+      <material name="wood"/>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.66 0.66 0.34"/>
+      <geometry>
+        <box size="0.08 0.08 0.68"/>
+      </geometry>
+      <material name="aluminium"/>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.66 0.66 0.34"/>
+      <geometry>
+        <box size="0.08 0.08 0.68"/>
+      </geometry>
+      <material name="aluminium"/>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.66 -0.66 0.34"/>
+      <geometry>
+        <box size="0.08 0.08 0.68"/>
+      </geometry>
+      <material name="aluminium"/>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.66 -0.66 0.34"/>
+      <geometry>
+        <box size="0.08 0.08 0.68"/>
+      </geometry>
+      <material name="aluminium"/>
+    </collision>
+  </link>
+  <!--joint between {parent} and link_0-->
+  <joint name="table_iiwa_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0.72"/>
+    <parent link="table"/>
     <child link="iiwa_link_0"/>
   </joint>
   <link name="iiwa_link_0">
