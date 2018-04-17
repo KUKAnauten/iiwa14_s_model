@@ -1,0 +1,10 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: iiwa14_s_model_description
+    relative_path: urdf/iiwa14_touch_s_model.urdf.xacro
+  SRDF:
+    relative_path: config/iiwa14_s_model.srdf
+  CONFIG:
+    author_name: Marcus Ebner
+    author_email: herrlauch@gmail.com
+    generated_timestamp: 1523978896
