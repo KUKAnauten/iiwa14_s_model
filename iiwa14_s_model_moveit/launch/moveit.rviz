@@ -1,15 +1,12 @@
 Panels:
   - Class: rviz/Displays
-    Help Height: 84
+    Help Height: 0
     Name: Displays
     Property Tree Widget:
       Expanded:
-        - /Global Options1
-        - /MarkerArray1
-        - /TF1
         - /TF1/Frames1
-      Splitter Ratio: 0.742560029
-    Tree Height: 214
+      Splitter Ratio: 0.569736838
+    Tree Height: 203
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -38,7 +35,7 @@ Visualization Manager:
         Z: 0
       Plane: XY
       Plane Cell Count: 10
-      Reference Frame: <Fixed Frame>
+      Reference Frame: world
       Value: true
     - Class: moveit_rviz_plugin/MotionPlanning
       Enabled: true
@@ -57,7 +54,7 @@ Visualization Manager:
         Size:
           X: 2
           Y: 2
-          Z: 2
+          Z: -2
       Name: MotionPlanning
       Planned Path:
         Color Enabled: false
@@ -109,20 +106,6 @@ Visualization Manager:
             Show Trail: false
             Value: true
           iiwa_link_ee:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          table:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          tool_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          tool_link_ee:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -219,17 +202,97 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          table:
+          world:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+        Robot Alpha: 0.5
+        Show Robot Collision: false
+        Show Robot Visual: true
+      Value: true
+    - Class: rviz/Axes
+      Enabled: false
+      Length: 1
+      Name: Axes
+      Radius: 0.100000001
+      Reference Frame: <Fixed Frame>
+      Value: false
+    - Class: rviz/TF
+      Enabled: false
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        {}
+      Update Interval: 0
+      Value: false
+    - Class: moveit_rviz_plugin/PlanningScene
+      Enabled: true
+      Move Group Namespace: ""
+      Name: PlanningScene
+      Planning Scene Topic: move_group/monitored_planning_scene
+      Robot Description: robot_description
+      Scene Geometry:
+        Scene Alpha: 0.899999976
+        Scene Color: 50; 230; 50
+        Scene Display Time: 0.200000003
+        Show Scene Geometry: true
+        Voxel Coloring: Z-Axis
+        Voxel Rendering: Occupied Voxels
+      Scene Robot:
+        Attached Body Color: 150; 50; 150
+        Links:
+          All Links Enabled: true
+          Expand Joint Details: false
+          Expand Link Details: false
+          Expand Tree: false
+          Link Tree Style: Links in Alphabetic Order
+          iiwa_link_0:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          tool_link:
+          iiwa_link_1:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          tool_link_ee:
+          iiwa_link_2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          iiwa_link_3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          iiwa_link_4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          iiwa_link_5:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          iiwa_link_6:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          iiwa_link_7:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          iiwa_link_ee:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -237,7 +300,7 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-        Robot Alpha: 0.5
+        Robot Alpha: 1
         Show Robot Collision: false
         Show Robot Visual: true
       Value: true
@@ -249,73 +312,19 @@ Visualization Manager:
         Cylinder: true
         Sphere: true
         Text: true
+        goal: true
+        pose1: true
+        pt0: true
+        pt1: true
+        pt2: true
+        pt3: true
+        start: true
+        start_pose2: true
       Queue Size: 100
-      Value: true
-    - Class: rviz/TF
-      Enabled: true
-      Frame Timeout: 15
-      Frames:
-        All Enabled: false
-        dummy_frame:
-          Value: true
-        iiwa_link_0:
-          Value: false
-        iiwa_link_1:
-          Value: false
-        iiwa_link_2:
-          Value: false
-        iiwa_link_3:
-          Value: false
-        iiwa_link_4:
-          Value: false
-        iiwa_link_5:
-          Value: false
-        iiwa_link_6:
-          Value: false
-        iiwa_link_7:
-          Value: false
-        iiwa_link_ee:
-          Value: false
-        table:
-          Value: false
-        target_frame_1:
-          Value: true
-        tool_link:
-          Value: false
-        tool_link_ee:
-          Value: true
-        world:
-          Value: true
-      Marker Scale: 1
-      Name: TF
-      Show Arrows: false
-      Show Axes: true
-      Show Names: false
-      Tree:
-        world:
-          dummy_frame:
-            target_frame_1:
-              {}
-          table:
-            iiwa_link_0:
-              iiwa_link_1:
-                iiwa_link_2:
-                  iiwa_link_3:
-                    iiwa_link_4:
-                      iiwa_link_5:
-                        iiwa_link_6:
-                          iiwa_link_7:
-                            iiwa_link_ee:
-                              tool_link:
-                                {}
-                              tool_link_ee:
-                                {}
-      Update Interval: 0
       Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Default Light: true
     Fixed Frame: world
     Frame Rate: 30
   Name: root
@@ -328,43 +337,43 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 4.7445817
+      Distance: 2.59689474
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.318772495
-        Y: 0.268818319
-        Z: 2.23518001e-07
+        X: 0.305671871
+        Y: 0.156674147
+        Z: -1.3560051e-06
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.389797091
+      Pitch: 0.154797688
       Target Frame: world
       Value: XYOrbit (rviz)
-      Yaw: 0.696693778
+      Yaw: 0.71182245
     Saved: ~
 Window Geometry:
   Displays:
-    collapsed: true
-  Height: 990
+    collapsed: false
+  Height: 1056
   Help:
     collapsed: false
-  Hide Left Dock: true
+  Hide Left Dock: false
   Hide Right Dock: false
   MotionPlanning:
-    collapsed: true
+    collapsed: false
   MotionPlanning - Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000200000000000003820000037dfc0200000007fb000000100044006900730070006c00610079007300000000430000016b000000e300fffffffb0000000800480065006c00700000000342000000bb0000007900fffffffb0000000a0056006900650077007300000003b0000000b0000000b300fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000374000001890000000000000000fb0000002e004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d00200053006c00690064006500720000000000ffffffff0000004300fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e006700000001b40000020c000001cc00ffffff000000030000050000000043fc0100000001fb00000024005200760069007a00560069007300750061006c0054006f006f006c00730047007500690100000000000005000000017800ffffff000005000000033400000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd000000010000000000000283000003c1fc0200000009fb000000100044006900730070006c006100790073010000003f00000110000000db00fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e006701000001550000024d000001ce00fffffffb0000000800480065006c00700000000342000000bb0000007500fffffffb0000000a0056006900650077007300000003b0000000b0000000b300fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006701000002db0000017a0000000000000000fb0000002e004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d00200053006c00690064006500720000000000ffffffff0000004700fffffffb00000024005200760069007a00560069007300750061006c0054006f006f006c007300470075006901000003a8000000580000004700fffffffb000000120020002d00200053006c00690064006500720000000000ffffffff0000000000000000000004f7000003c100000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   RvizVisualToolsGui:
     collapsed: false
   Views:
     collapsed: false
-  Width: 1280
+  Width: 1920
   X: 1920
   Y: 0

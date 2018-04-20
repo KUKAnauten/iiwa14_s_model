@@ -22,8 +22,6 @@
         <joint name="iiwa_joint_6" value="0.7168" />
         <joint name="iiwa_joint_7" value="0" />
     </group_state>
-    <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
-    <end_effector name="gripper" parent_link="iiwa_s_model_finger_1" group="manipulator" parent_group="manipulator" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
     <disable_collisions link1="iiwa_link_0" link2="iiwa_link_1" reason="Adjacent" />
     <disable_collisions link1="iiwa_link_0" link2="iiwa_link_2" reason="Never" />
