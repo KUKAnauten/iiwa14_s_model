@@ -8,14 +8,14 @@
 
   <!--<xacro:include filename="$(find robotiq_s_model_visualization)/cfg/s-model_mesh.urdf"/>-->
   <!--<xacro:include filename="$(find robotiq_s_model_visualization)/cfg/s-model_articulated_macro.xacro" />-->
-  
+
   <xacro:include filename="$(find robotiq_s_model_visualization)/cfg/s-model_mesh_macro.xacro" />
 
   <xacro:arg name="hardware_interface" default="PositionJointInterface"/>
   <xacro:arg name="robot_name" default="iiwa"/>
   <xacro:arg name="origin_xyz" default="0 0 1.71"/><!-- 0 0 1.71 -->
   <xacro:arg name="origin_rpy" default="0 1.570796327 0"/>
-  
+
   <!-- Fix to world just for testing -->
   <material name="wood">
     <color rgba="0.89 0.58 0.47 0.3"/>
@@ -88,7 +88,7 @@
       </geometry>
       <material name="aluminium"/>
     </visual>
-    
+
 
 
     <collision>
@@ -187,5 +187,13 @@
 
   <xacro:s-model_mesh prefix="$(arg robot_name)_s_model_">
   </xacro:s-model_mesh>
+
+  <joint name="world_sunrise_world" type="fixed">
+    <origin xyz="$(arg origin_xyz)" rpy="0 0 0" />
+    <parent link="world" />
+    <child link="sunrise_world" />
+  </joint>
+
+  <link name="sunrise_world" />
 
 </robot>

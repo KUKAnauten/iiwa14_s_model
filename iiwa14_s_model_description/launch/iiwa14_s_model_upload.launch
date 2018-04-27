@@ -1,7 +1,9 @@
 <?xml version="1.0"?>
 <launch>
-  <arg name="hardware_interface" default="PositionJointInterface"/> 
+  <arg name="hardware_interface" default="PositionJointInterface"/>
   <arg name="robot_name" default="iiwa"/>
+  <arg name="tool_name" default="gripper"/>
 
+  <param name="/iiwa/toolName" type="string" value="$(arg tool_name)" />
   <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find iiwa14_s_model_description)/urdf/iiwa14_touch_s_model.urdf.xacro' hardware_interface:=$(arg hardware_interface) robot_name:=$(arg robot_name)" />
 </launch>
