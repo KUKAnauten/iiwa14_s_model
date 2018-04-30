@@ -6,7 +6,7 @@ Panels:
       Expanded:
         - /TF1/Frames1
       Splitter Ratio: 0.569736838
-    Tree Height: 203
+    Tree Height: 187
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -109,6 +109,40 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+          iiwa_s_model_connector:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          iiwa_s_model_finger_1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          iiwa_s_model_finger_2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          iiwa_s_model_finger_3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          iiwa_s_model_palm:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          sunrise_world:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          table:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           world:
             Alpha: 1
             Show Axes: false
@@ -202,6 +236,40 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+          iiwa_s_model_connector:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          iiwa_s_model_finger_1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          iiwa_s_model_finger_2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          iiwa_s_model_finger_3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          iiwa_s_model_palm:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          sunrise_world:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          table:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           world:
             Alpha: 1
             Show Axes: false
@@ -296,6 +364,40 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+          iiwa_s_model_connector:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          iiwa_s_model_finger_1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          iiwa_s_model_finger_2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          iiwa_s_model_finger_3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          iiwa_s_model_palm:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          sunrise_world:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          table:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           world:
             Alpha: 1
             Show Axes: false
@@ -309,22 +411,13 @@ Visualization Manager:
       Marker Topic: /rviz_visual_tools
       Name: MarkerArray
       Namespaces:
-        Cylinder: true
-        Sphere: true
-        Text: true
-        goal: true
-        pose1: true
-        pt0: true
-        pt1: true
-        pt2: true
-        pt3: true
-        start: true
-        start_pose2: true
+        {}
       Queue Size: 100
       Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
+    Default Light: true
     Fixed Frame: world
     Frame Rate: 30
   Name: root
@@ -337,7 +430,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 2.59689474
+      Distance: 5.65823793
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
@@ -352,7 +445,7 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.154797688
+      Pitch: 0.139797702
       Target Frame: world
       Value: XYOrbit (rviz)
       Yaw: 0.71182245
@@ -360,7 +453,7 @@ Visualization Manager:
 Window Geometry:
   Displays:
     collapsed: false
-  Height: 1056
+  Height: 990
   Help:
     collapsed: false
   Hide Left Dock: false
@@ -369,11 +462,11 @@ Window Geometry:
     collapsed: false
   MotionPlanning - Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd000000010000000000000283000003c1fc0200000009fb000000100044006900730070006c006100790073010000003f00000110000000db00fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e006701000001550000024d000001ce00fffffffb0000000800480065006c00700000000342000000bb0000007500fffffffb0000000a0056006900650077007300000003b0000000b0000000b300fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006701000002db0000017a0000000000000000fb0000002e004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d00200053006c00690064006500720000000000ffffffff0000004700fffffffb00000024005200760069007a00560069007300750061006c0054006f006f006c007300470075006901000003a8000000580000004700fffffffb000000120020002d00200053006c00690064006500720000000000ffffffff0000000000000000000004f7000003c100000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000100000000000002830000037dfc0200000009fb000000100044006900730070006c0061007900730100000043000000fc000000e300fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e0067010000014500000223000001cc00fffffffb0000000800480065006c00700000000342000000bb0000007900fffffffb0000000a0056006900650077007300000003b0000000b0000000b300fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006701000002db0000017a0000000000000000fb0000002e004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d00200053006c00690064006500720000000000ffffffff0000004300fffffffb00000024005200760069007a00560069007300750061006c0054006f006f006c0073004700750069010000036e000000520000004300fffffffb000000120020002d00200053006c00690064006500720000000000ffffffff0000000000000000000002770000037d00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   RvizVisualToolsGui:
     collapsed: false
   Views:
     collapsed: false
-  Width: 1920
+  Width: 1280
   X: 1920
   Y: 0

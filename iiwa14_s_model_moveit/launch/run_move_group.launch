@@ -9,10 +9,6 @@
     <arg name="hardware_interface" default="PositionJointInterface"/>
     <!-- name of the iiwa to use, useful in case of multiple robots. Every robot is gonna have its nodees/topics under a namespace with the same name. -->
     <arg name="robot_name" default="iiwa"/>
-    <!-- Set pose of robot in the world -->
-    <arg name="origin_z" default="1.71"/>
-    <arg name="origin_xyz" default="'0 0 $(arg origin_z)'"/> <!-- Note the syntax to pass a vector -->
-    <arg name="origin_rpy" default="'0 1.570796327 0'"/>
     <!-- Model of the iiwa to use : iiwa7, iiwa14 -->
     <arg name="model" default="iiwa14"/>
     <!-- the "sim" argument controls whether we connect to a Simulated or Real robot. -->

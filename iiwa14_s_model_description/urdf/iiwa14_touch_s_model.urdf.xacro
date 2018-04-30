@@ -13,7 +13,7 @@
 
   <xacro:arg name="hardware_interface" default="PositionJointInterface"/>
   <xacro:arg name="robot_name" default="iiwa"/>
-  <xacro:arg name="origin_xyz" default="0 0 1.71"/><!-- 0 0 1.71 -->
+  <xacro:arg name="origin_xyz" default="0 0 1.735"/><!-- 0 0 1.71 -->
   <xacro:arg name="origin_rpy" default="0 1.570796327 0"/>
 
   <!-- Fix to world just for testing -->
@@ -181,7 +181,7 @@
     <joint name="$(arg robot_name)_connector_to_palm"  type="fixed">
       <parent link="$(arg robot_name)_s_model_connector"/>
       <child link="$(arg robot_name)_s_model_palm"/>
-      <origin xyz="0 0 0.18" rpy="0 0 ${3.14159+0.2618}"/>
+      <origin xyz="0 0 0.18" rpy="0 0 0"/>
     </joint>
   </xacro:unless>
 
